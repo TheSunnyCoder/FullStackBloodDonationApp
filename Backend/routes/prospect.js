@@ -1,12 +1,12 @@
 const express=require('express');
-const { createProspect, getAllProspect, updateProspect, deleteProspect, getOneProspect } = require('../controllers/prospect');
+const { createProspect, getAllProspects, updateProspect, deleteProspect, getOneProspect } = require('../controllers/prospect');
 const { route } = require('./auth');
 const router=express.Router();
 //ADD PROSPECT
 router.post('/',createProspect);
 
 //GET ALL PROSPECT
-router.get('/',getAllProspect);
+router.get('/',getAllProspects);
 
 //UPDATE PROSPECT
 router.put('/:id',updateProspect);
