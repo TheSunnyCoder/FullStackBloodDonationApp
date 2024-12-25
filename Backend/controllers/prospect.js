@@ -14,7 +14,7 @@ const createProspect=async (req,res)=>{
 };
 //GET ALL prospect
 
-const getAllProspect= async(req,res)=>{  //error chance
+const getAllProspects= async(req,res)=>{  //error chance
     try {
         const prospects=await Prospect.find().sort({createdAt:-1});
         res.status(200).json(prospects);
@@ -74,4 +74,4 @@ try {
    res.status(500).json(error);
 }
 }*/
-module.exports={deleteProspect,getOneProspect,getAllProspect,updateProspect,createProspect}
+module.exports={deleteProspect,getOneProspect,getAllProspects,updateProspect,createProspect}
