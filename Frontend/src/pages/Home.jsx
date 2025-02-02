@@ -1,9 +1,9 @@
-import Contact from "../components/Contact"
-import Featured from "../components/Featured"
-import Footer from "../components/Footer"
-import Hero from "../components/Hero"
-import Navbar from "../components/Navbar"
-import {Element} from "react-scroll"
+import Contact from "../components/Contact";
+import Featured from "../components/Featured";
+import Footer from "../components/Footer";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import {Element} from "react-scroll";
 
 
 const Home = () => {
@@ -25,4 +25,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
